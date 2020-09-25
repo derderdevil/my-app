@@ -11,4 +11,7 @@ export class HttpService {
   getBeer() {
     return this.http.get("https://api.openbrewerydb.org/breweries");
   }
+  getPersons(){
+    return this.http.get("http://localhost:8080/demo/all");
+  }
 }
